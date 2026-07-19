@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+
+<title>Stephan Van Rensburg | Portfolio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+
+
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#0F172A;
+    color:#F8FAFC;
+}
+
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:rgba(15,23,42,.95);
+    backdrop-filter:blur(10px);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    z-index:1000;
+}
+
+
+
+nav h2{
+    color:#3B82F6;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#3B82F6;
+}
+
+.hero{
+    height:60vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    flex-direction:column;
+    padding:20px;
+    padding-bottom: 1px;
+}
+
+
+
+.hero h1{
+    font-size:3rem;
+}
+
+.hero h2{
+    color:#3B82F6;
+    margin:15px 0;
+    font-weight:500;
+}
+
+.hero p{
+    max-width:700px;
+    color:#94A3B8;
+    line-height:1.7;
+}
+
+.buttons{
+    margin-top:15px;
+    
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 28px;
+    margin:10px;
+    border-radius:10px;
+    text-decoration:none;
+    transition:.3s;
+    font-weight:bold;
+}
+
+.primary{
+    background:#3B82F6;
+    color:white;
+}
+
+.secondary{
+    border:2px solid #3B82F6;
+    color:#3B82F6;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+section{
+    padding:80px 10%;
+    
+}
+
+h3{
+    font-size:2rem;
+    margin-bottom:30px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#1E293B;
+    border-radius:15px;
+    padding:25px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.skill{
+    background:#1E293B;
+    padding:12px 22px;
+    border-radius:40px;
+}
+
+footer{
+    padding:40px;
+    text-align:center;
+    color:#94A3B8;
+}
+
+</style>
+
+</head>
+<body>
+
+<nav>
+
+
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+
+
+<h1>Stephan Van Rensburg</h1>
+
+<h2>BSc IT Student</h2>
+
+<p>
+Third-year Information Technology student at North-West University with an
+interest in Data Analytics, SQL, and software development.
+Currently expanding my skills in Power BI and building practical projects.
+</p>
+
+<div class="buttons">
+<a class="btn primary" href="#">Download CV</a>
+<a class="btn secondary" href="https://github.com/stephvr">GitHub</a>
+<a class="btn secondary" href="https://www.linkedin.com/in/stephanvanrensburg">LinkedIn</a>
+</div>
+
+</section>
+
+<section id="about">
+
+<h3>About Me</h3>
+
+<p style="max-width:850px;line-height:1.8;color:#CBD5E1;">
+I'm passionate about building practical software solutions using C# and SQL
+Server. My interests are moving toward Data Analytics, where I enjoy working
+with databases, reporting, and transforming data into meaningful insights and I am currently completing my certification in Microsoft Data Fundamentals and Power BI.
+</p>
+
+</section>
+
+<section id="skills">
+
+<h3>Skills</h3>
+
+<div class="skills">
+
+<div class="skill">C#</div>
+<div class="skill">SQL</div>
+<div class="skill">C++</div>
+<div class="skill">Java</div>
+<div class="skill">Python</div>
+<div class="skill">Data Analytics</div>
+<div class="skill">GitHub</div>
+<div class="skill">Power BI</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h3>Projects</h3>
+
+<div class="cards">
+
+<div class="card">
+
+<h2>🐾 Paws & Claws Animal Shelter System</h2>
+
+<br>
+
+<p>
+Desktop application developed in C# Windows Forms with SQL Server for managing
+animals, adopters, animal types, and shelter records.
+</p>
+
+<br>
+
+<strong>• C#  • SQL</strong>
+
+</div>
+
+<div class="card">
+
+<h2>🏎 Apex Motorsport Database</h2>
+
+<br>
+
+<p>
+Formula One database project designed to manage drivers, teams, races and
+various data using SQL.
+</p>
+
+<br>
+
+<strong>• Oracle SQL Developer</strong>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h3>Contact</h3>
+
+<p>Email: stephanvr10@gmail.com</p>
+<p>LinkedIn: stephanvanrensburg</p>
+<p>GitHub: github.com/stephvr</p>
+
+</section>
+
+<footer>
+
+© 2026 Stephan Van Rensburg
+
+</footer>
+
+</body>
+</html>
