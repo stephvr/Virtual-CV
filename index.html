@@ -1,361 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta charset="UTF-8">
-
-<title>Stephan Van Rensburg | Portfolio</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-
-
-
-<style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html
-{
-    scroll-behavior: smooth;
-}
-
-body
-{
-    font-family:'Inter',sans-serif;
-    background:#0F172A;
-    color:#F8FAFC;
-}
-
-nav
-{
-    position:fixed;
-    width:100%;
-    top:0;
-    background:rgba(15,23,42,.95);
-    backdrop-filter:blur(10px);
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 10%;
-    z-index:1000;
-}
-
-
-
-nav h2
-{
-    color:#3B82F6;
-}
-
-nav ul
-{
-    display:flex;
-    list-style:none;
-    gap:30px;
-}
-
-nav a
-{
-    color:white;
-    text-decoration:none;
-    transition:.3s;
-}
-
-nav a:hover
-{
-    color:#3B82F6;
-}
-
-.hero
-{
-    min-height:70vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    flex-direction:column;
-    padding:20px;
-    padding-top:120px;
-}
-
-
-
-.hero h1
-{
-    font-size:clamp(2rem, 8vw, 3.5rem);
-    line-height:1.1;
-    word-break:break-word;
-}
-
-.hero h2
-{
-    color:#3B82F6;
-    margin:15px 0;
-    font-weight:500;
-}
-
-.hero p
-{
-    max-width:700px;
-    color:#94A3B8;
-    line-height:1.7;
-}
-
-.buttons
-{
-    margin-top:15px;
-    
-}
-
-.btn
-{
-    display:inline-block;
-    padding:14px 28px;
-    margin:10px;
-    border-radius:10px;
-    text-decoration:none;
-    transition:.3s;
-    font-weight:bold;
-}
-
-.primary
-{
-    background:#3B82F6;
-    color:white;
-}
-
-.secondary
-{
-    border:2px solid #3B82F6;
-    color:#3B82F6;
-}
-
-.btn:hover
-{
-    transform:translateY(-3px);
-}
-
-section
-{
-    padding:80px 10%;
-    
-}
-
-h3{
-    font-size:2rem;
-    margin-bottom:30px;
-}
-
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:30px;
-}
-
-.card{
-    background:#1E293B;
-    border-radius:15px;
-    padding:25px;
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-8px);
-}
-
-.skills{
-    display:flex;
-    flex-wrap:wrap;
-    gap:15px;
-}
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+
+    <title>Stephan Van Rensburg | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+
+
+
+    <style>
+
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+    }
+
+    html
+    {
+        scroll-behavior: smooth;
+    }
+
+    body
+    {
+        font-family:'Inter',sans-serif;
+        background:#0F172A;
+        color:#F8FAFC;
+    }
+
+    nav
+    {
+        position:fixed;
+        width:100%;
+        top:0;
+        background:rgba(15,23,42,.95);
+        backdrop-filter:blur(10px);
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:20px 10%;
+        z-index:1000;
+    }
+
+
+
+    nav h2
+    {
+        color:#3B82F6;
+    }
+
+    nav ul
+    {
+        display:flex;
+        list-style:none;
+        gap:30px;
+    }
+
+    nav a
+    {
+        color:white;
+        text-decoration:none;
+        transition:.3s;
+    }
+
+    nav a:hover
+    {
+        color:#3B82F6;
+    }
+
+    .hero
+    {
+        min-height:70vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+        flex-direction:column;
+        padding:20px;
+        padding-top:120px;
+    }
+
+
+
+    .hero h1
+    {
+        font-size:clamp(2rem, 8vw, 3.5rem);
+        line-height:1.1;
+        word-break:break-word;
+    }
+
+    .hero h2
+    {
+        color:#3B82F6;
+        margin:15px 0;
+        font-weight:500;
+    }
+
+    .hero p
+    {
+        max-width:700px;
+        color:#94A3B8;
+        line-height:1.7;
+    }
+
+    .buttons
+    {
+        margin-top:15px;
+        
+    }
+
+    .btn
+    {
+        display:inline-block;
+        padding:14px 28px;
+        margin:10px;
+        border-radius:10px;
+        text-decoration:none;
+        transition:.3s;
+        font-weight:bold;
+    }
+
+    .primary
+    {
+        background:#3B82F6;
+        color:white;
+    }
+
+    .secondary
+    {
+        border:2px solid #3B82F6;
+        color:#3B82F6;
+    }
+
+    .btn:hover
+    {
+        transform:translateY(-3px);
+    }
+
+    section
+    {
+        padding:80px 10%;
+        
+    }
+
+    h3{
+        font-size:2rem;
+        margin-bottom:30px;
+    }
+
+    .cards{
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+        gap:30px;
+    }
+
+    .card{
+        background:#1E293B;
+        border-radius:15px;
+        padding:25px;
+        transition:.3s;
+    }
+
+    .card:hover{
+        transform:translateY(-8px);
+    }
+
+    .skills{
+        display:flex;
+        flex-wrap:wrap;
+        gap:15px;
+    }
 
-.skill{
-    background:#1E293B;
-    padding:12px 22px;
-    border-radius:40px;
-}
+    .skill{
+        background:#1E293B;
+        padding:12px 22px;
+        border-radius:40px;
+    }
 
-footer{
-    padding:40px;
-    text-align:center;
-    color:#94A3B8;
-}
-.card {
-    display: flex;
-    flex-direction: column;
-}
+    footer{
+        padding:40px;
+        text-align:center;
+        color:#94A3B8;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+    }
 
-.github-btn {
-    margin-top: auto;
-    align-self: flex-end;
-}
+    .github-btn {
+        margin-top: auto;
+        align-self: flex-end;
+    }
 
-</style>
+    </style>
+    <link rel="stylesheet" href="animations.css">
 
-</head>
-<body>
+    </head>
+    <body>
 
-    <nav>
+        <nav>
 
 
 
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
 
-    </nav>
+        </nav>
 
-    <section class="hero">
+        <section class="hero">
 
 
 
-        <h1>Stephan Van Rensburg</h1>
+            <h1>Stephan Van Rensburg</h1>
 
-        <h2>BSc IT Student</h2>
+            <h2>BSc IT Student</h2>
 
-        <p>
-        Third-year Information Technology student at North-West University with an
-        interest in Data Analytics, SQL, and software development.
-        Currently expanding my skills in Power BI and building practical projects.
-        </p>
+            <p>
+            Third-year Information Technology student at North-West University with an
+            interest in Data Analytics, SQL, and software development.
+            Currently expanding my skills in Power BI and building practical projects.
+            </p>
 
-        <div class="buttons">
-            <a class="btn primary" href="Stephan_Van_Rensburg_CV.pdf" download>Download CV</a>
-            <a class="btn secondary" href="https://github.com/stephvr">GitHub</a>
-            <a class="btn secondary" href="https://www.linkedin.com/in/stephanvanrensburg">LinkedIn</a>
-        </div>
+            <div class="buttons">
+                <a class="btn primary" href="Stephan_Van_Rensburg_CV.pdf" download>Download CV</a>
+                <a class="btn secondary" href="https://github.com/stephvr">GitHub</a>
+                <a class="btn secondary" href="https://www.linkedin.com/in/stephanvanrensburg">LinkedIn</a>
+            </div>
 
-    </section>
+        </section>
 
-    <section id="about">
+        <section id="about">
 
-        <h3>About Me</h3>
+            <h3>About Me</h3>
 
-        <p style="max-width:850px;line-height:1.8;color:#CBD5E1;">
-        I'm passionate about building practical software solutions using C# and SQL
-        Server. My interests are moving toward Data Analytics, where I enjoy working
-        with databases, reporting, and transforming data into meaningful insights and I am currently completing my certifications in Microsoft Data Fundamentals and Power BI.
-        </p>
+            <p style="max-width:850px;line-height:1.8;color:#CBD5E1;">
+            I'm passionate about building practical software solutions using C# and SQL
+            Server. My interests are moving toward Data Analytics, where I enjoy working
+            with databases, reporting, and transforming data into meaningful insights and I am currently completing my certifications in Microsoft Data Fundamentals and Power BI.
+            </p>
 
-    </section>
+        </section>
 
-    <section id="skills">
+        <section id="skills">
 
-        <h3>Skills</h3>
+            <h3>Skills</h3>
 
-        <div class="skills">
+            <div class="skills">
 
-            <div class="skill">C#</div>
-            <div class="skill">SQL</div>
-            <div class="skill">C++</div>
-            <div class="skill">Java</div>
-            <div class="skill">Python</div>
-            <div class="skill">Data Analytics</div>
-            <div class="skill">GitHub</div>
-            <div class="skill">Power BI</div>
+                <div class="skill">C#</div>
+                <div class="skill">SQL</div>
+                <div class="skill">C++</div>
+                <div class="skill">Java</div>
+                <div class="skill">Python</div>
+                <div class="skill">Data Analytics</div>
+                <div class="skill">GitHub</div>
+                <div class="skill">Power BI</div>
 
-        </div>
+            </div>
 
-    </section>
+        </section>
 
-    <section id="projects">
+        <section id="projects">
 
-        <h3>Projects</h3>
+            <h3>Projects</h3>
 
-        <div class="cards">
+            <div class="cards">
 
 
-            <div class="card">
+                <div class="card">
 
-                <h2>🐾 Paws & Claws Animal Shelter System</h2>
+                    <h2>🐾 Paws & Claws Animal Shelter System</h2>
 
-                <br>
+                    <br>
 
-                <p>
-                Desktop application developed in C# Windows Forms with SQL Server for managing
-                animals, adopters, animal types, and shelter records.
-                </p>
+                    <p>
+                    Desktop application developed in C# Windows Forms with SQL Server for managing
+                    animals, adopters, animal types, and shelter records.
+                    </p>
 
-                <br>
+                    <br>
 
-                <strong>• C#  • SQL</strong>
-                <a href="https://github.com/Paws-ClawsShelter/Paws_And_Claws"
-                target="_blank"
-                class="btn secondary github-btn">
-                View on GitHub
-                </a>
+                    <strong>• C#  • SQL</strong>
+                    <a href="https://github.com/Paws-ClawsShelter/Paws_And_Claws"
+                    target="_blank"
+                    class="btn secondary github-btn">
+                    View on GitHub
+                    </a>
+
+
+                </div>
+
+
+                <div class="card">
+
+                    <h2>🏎 Apex Motorsport Database</h2>
+
+                    <br>
+
+                    <p>
+                    Formula One database project designed to manage drivers, teams, races and
+                    various data using SQL.
+                    </p>
+
+                    <br>
+
+                    <strong>• Oracle SQL Developer</strong>
+                    <a href="https://github.com/lSiphonl/ApexMotorsport"
+                    target="_blank"
+                    class="btn secondary github-btn">
+                    View on GitHub
+                    </a>
+
+
+                </div>
 
 
             </div>
 
+        </section>
 
-            <div class="card">
+        <section id="contact">
 
-                <h2>🏎 Apex Motorsport Database</h2>
+            <h3>Contact</h3>
 
-                <br>
+            <p>
+                <strong>Email:</strong>
+                <a href="mailto:stephanvr10@gmail.com">stephanvr10@gmail.com</a>
+            </p>
 
-                <p>
-                Formula One database project designed to manage drivers, teams, races and
-                various data using SQL.
-                </p>
-
-                <br>
-
-                <strong>• Oracle SQL Developer</strong>
-                <a href="https://github.com/lSiphonl/ApexMotorsport"
-                target="_blank"
-                class="btn secondary github-btn">
-                View on GitHub
+            <p>
+                <strong>GitHub:</strong>
+                <a href="https://github.com/stephvr" target="_blank">
+                    github.com/stephvr
                 </a>
+            </p>
 
+            <p>
+                <strong>LinkedIn:</strong>
+                <a href="https://www.linkedin.com/in/stephanvanrensburg/" target="_blank">
+                    linkedin.com/in/stephanvanrensburg
+                </a>
+            </p>
 
-            </div>
-
-
-        </div>
-
-    </section>
-
-    <section id="contact">
-
-        <h3>Contact</h3>
-
-        <p>
-            <strong>Email:</strong>
-            <a href="mailto:stephanvr10@gmail.com">stephanvr10@gmail.com</a>
-        </p>
-
-        <p>
-            <strong>GitHub:</strong>
-            <a href="https://github.com/stephvr" target="_blank">
-                github.com/stephvr
-            </a>
-        </p>
-
-        <p>
-            <strong>LinkedIn:</strong>
-            <a href="https://www.linkedin.com/in/stephanvanrensburg/" target="_blank">
-                linkedin.com/in/stephanvanrensburg
-            </a>
-        </p>
-
-    </section>
-<footer>
+        </section>
+        <footer>
 
 
 
-</footer>
+        </footer>
+        <script src="animations.js"></script>
 
-</body>
+    </body>
 </html>
