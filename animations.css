@@ -182,3 +182,68 @@ nav a.active::after { transform: scaleX(1); }
   .reveal { opacity: 1; transform: none; }
   .typing-cursor { display: none; }
 }
+
+
+
+.coursework-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.course-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 22px;
+    background: #1E293B;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    border-radius: 15px;
+    transition: transform 0.3s ease,
+                border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-6px);
+    border-color: #3B82F6;
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.22);
+}
+
+.course-card.distinction {
+    border-left: 4px solid #3B82F6;
+}
+
+.course-icon {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    font-size: 1.4rem;
+    background: rgba(59, 130, 246, 0.12);
+    border-radius: 12px;
+}
+
+.course-card h4 {
+    margin: 0 0 6px;
+    font-size: 1rem;
+    color: #F8FAFC;
+}
+
+.course-card p {
+    margin: 0;
+    color: #94A3B8;
+    font-size: 0.9rem;
+}
+
+.course-card.distinction p {
+    color: #60A5FA;
+}
+
+
+@media (max-width: 900px) {
+    .coursework-grid {
+        grid-template-columns: 1fr;
+    }
+}
