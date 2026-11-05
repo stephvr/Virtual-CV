@@ -1,383 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
 
-    <title>Stephan Van Rensburg | Portfolio</title>
+<title>Stephan Van Rensburg | Portfolio</title>
+<meta name="description" content="Stephan Van Rensburg's virtual CV. BSc IT candidate at North-West University, awaiting final results and open to full-time IT opportunities.">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-
-
-
-    <style>
-
-    *{
-        margin:0;
-        padding:0;
-        box-sizing:border-box;
-    }
-
-    html
-    {
-        scroll-behavior: smooth;
-    }
-
-    body
-    {
-        font-family:'Inter',sans-serif;
-        background:#0F172A;
-        color:#F8FAFC;
-    }
-
-    nav
-    {
-        position:fixed;
-        width:100%;
-        top:0;
-        background:rgba(15,23,42,.95);
-        backdrop-filter:blur(10px);
-        display:flex;
-        justify-content:space-between;
-        align-items:center;
-        padding:20px 10%;
-        z-index:1000;
-    }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 
 
-    nav h2
-    {
-        color:#3B82F6;
-    }
 
-    nav ul
-    {
-        display:flex;
-        list-style:none;
-        gap:30px;
-    }
+<style>
 
-    nav a
-    {
-        color:white;
-        text-decoration:none;
-        transition:.3s;
-    }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-    nav a:hover
-    {
-        color:#3B82F6;
-    }
+html
+{
+    scroll-behavior: smooth;
+}
 
-    .hero
-    {
-        min-height:70vh;
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        text-align:center;
-        flex-direction:column;
-        padding:20px;
-        padding-top:120px;
-    }
+body
+{
+    font-family:'Inter',sans-serif;
+    background:#0F172A;
+    color:#F8FAFC;
+}
 
-
-
-    .hero h1
-    {
-        font-size:clamp(2rem, 8vw, 3.5rem);
-        line-height:1.1;
-        word-break:break-word;
-    }
-
-    .hero h2
-    {
-        color:#3B82F6;
-        margin:15px 0;
-        font-weight:500;
-    }
-
-    .hero p
-    {
-        max-width:700px;
-        color:#94A3B8;
-        line-height:1.7;
-    }
-
-    .buttons
-    {
-        margin-top:15px;
-        
-    }
-
-    .btn
-    {
-        display:inline-block;
-        padding:14px 28px;
-        margin:10px;
-        border-radius:10px;
-        text-decoration:none;
-        transition:.3s;
-        font-weight:bold;
-    }
-
-    .primary
-    {
-        background:#3B82F6;
-        color:white;
-    }
-
-    .secondary
-    {
-        border:2px solid #3B82F6;
-        color:#3B82F6;
-    }
-
-    .btn:hover
-    {
-        transform:translateY(-3px);
-    }
-
-    section
-    {
-        padding:80px 10%;
-        
-    }
-
-    h3{
-        font-size:2rem;
-        margin-bottom:30px;
-    }
-
-    .cards{
-        display:grid;
-        grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-        gap:30px;
-    }
-
-    .card{
-        background:#1E293B;
-        border-radius:15px;
-        padding:25px;
-        transition:.3s;
-    }
-
-    .card:hover{
-        transform:translateY(-8px);
-    }
-
-    .skills{
-        display:flex;
-        flex-wrap:wrap;
-        gap:15px;
-    }
-
-    .skill{
-        background:#1E293B;
-        padding:12px 22px;
-        border-radius:40px;
-    }
-
-    footer{
-        padding:40px;
-        text-align:center;
-        color:#94A3B8;
-    }
-    .card {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .github-btn {
-        margin-top: auto;
-        align-self: flex-end;
-    }
-
-    </style>
-    <link rel="stylesheet" href="animations.css">
-
-    </head>
-    <body>
-
-        <nav>
+nav
+{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:rgba(15,23,42,.95);
+    backdrop-filter:blur(10px);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    z-index:1000;
+}
 
 
 
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#coursework">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+nav h2
+{
+    color:#3B82F6;
+}
 
-        </nav>
+nav ul
+{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
 
-        <section class="hero">
+nav a
+{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav a:hover
+{
+    color:#3B82F6;
+}
+
+.hero
+{
+    min-height:70vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    flex-direction:column;
+    padding:20px;
+    padding-top:120px;
+}
 
 
 
-            <h1>Stephan Van Rensburg</h1>
+.hero h1
+{
+    font-size:clamp(2rem, 8vw, 3.5rem);
+    line-height:1.1;
+    word-break:break-word;
+}
 
-            <h2>BSc IT Student</h2>
+.hero h2
+{
+    color:#3B82F6;
+    margin:15px 0;
+    font-weight:500;
+}
 
-            <p>
-            Third-year Information Technology student at North-West University with an
-            interest in Data Analytics, SQL, and software development.
-            Currently expanding my skills in Power BI and building practical projects.
-            </p>
+.hero p
+{
+    max-width:700px;
+    color:#94A3B8;
+    line-height:1.7;
+}
 
-            <div class="buttons">
-                <a class="btn primary" href="Stephan_Van_Rensburg_CV.pdf" download>Download CV</a>
-                <a class="btn secondary" href="https://github.com/stephvr">GitHub</a>
-                <a class="btn secondary" href="https://www.linkedin.com/in/stephanvanrensburg">LinkedIn</a>
-            </div>
+.buttons
+{
+    margin-top:15px;
+    
+}
 
-        </section>
+.btn
+{
+    display:inline-block;
+    padding:14px 28px;
+    margin:10px;
+    border-radius:10px;
+    text-decoration:none;
+    transition:.3s;
+    font-weight:bold;
+}
 
-        <section id="about">
+.primary
+{
+    background:#3B82F6;
+    color:white;
+}
 
-            <h3>About Me</h3>
+.secondary
+{
+    border:2px solid #3B82F6;
+    color:#3B82F6;
+}
 
-            <p style="max-width:850px;line-height:1.8;color:#CBD5E1;">
-            I'm passionate about building practical software solutions using C# and SQL. My interests are moving toward Data Analytics, where I enjoy working
-            with databases, reporting, and transforming data into meaningful insights and I am currently completing my certifications in Microsoft Data Fundamentals and Power BI.
-            </p>
+.btn:hover
+{
+    transform:translateY(-3px);
+}
 
-        </section>
+section
+{
+    padding:80px 10%;
+    
+}
 
-        <section id="skills">
+h3{
+    font-size:2rem;
+    margin-bottom:30px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#1E293B;
+    border-radius:15px;
+    padding:25px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.skill{
+    background:#1E293B;
+    padding:12px 22px;
+    border-radius:40px;
+}
+
+footer{
+    padding:40px;
+    text-align:center;
+    color:#94A3B8;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.github-btn {
+    margin-top: auto;
+    align-self: flex-end;
+}
+
+</style>
+
+<link rel="stylesheet" href="animations.css">
+
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <nav aria-label="Main navigation">
+
+
+
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <main id="main">
+    <section class="hero" aria-labelledby="name">
+
+
+
+        <h1 id="name">Stephan Van Rensburg</h1>
+
+        <h2 aria-label="BSc IT candidate, with strengths in Java, C# and SQL">BSc IT Candidate</h2>
+
+        <p>
+        I've completed my final BSc Information Technology exams at North-West
+        University and am awaiting results. Based in Potchefstroom, with interests
+        in software development, databases and data analytics.
+        </p>
+        <p class="availability">Open to full-time IT opportunities</p>
+
+        <div class="buttons">
+            <a class="btn primary" href="Stephan_Van_Rensburg_CV.pdf" download="Stephan_Van_Rensburg_CV.pdf">Download CV</a>
+            <a class="btn secondary" href="https://github.com/stephvr">GitHub</a>
+            <a class="btn secondary" href="https://www.linkedin.com/in/stephanvanrensburg">LinkedIn</a>
+        </div>
+
+    </section>
+
+<section id="about">
+
+    <h3>About Me</h3>
+
+    <p style="max-width:850px;line-height:1.8;color:#CBD5E1;">
+    My strongest skills are Java, C#, SQL and Git. I enjoy software and database
+    projects, and plan to explore Power BI to develop my interest in data analytics.
+    </p>
+    <dl class="profile-details">
+        <div><dt>Education</dt><dd>BSc Information Technology, NWU Potchefstroom, 2024&ndash;2026. Final exams completed; awaiting results.</dd></div>
+        <div><dt>Honours selection</dt><dd>Conditionally selected for Honours study at NWU in 2027.</dd></div>
+        <div><dt>Experience</dt><dd>Student Assistant, Data Structures and Algorithms, NWU Potchefstroom. Marked assignments and tests during the second semester of 2026.</dd></div>
+        <div><dt>Membership</dt><dd>Golden Key International Honour Society member.</dd></div>
+    </dl>
+
+</section>
+
+<section id="skills">
 
             <h3>Skills</h3>
+            <h4 class="skill-level">Core skills</h4>
 
             <div class="skills">
 
-                <div class="skill">C#</div>
-                <div class="skill">SQL</div>
-                <div class="skill">C++</div>
-                <div class="skill">Java</div>
-                <div class="skill">Python</div>
-                <div class="skill">Data Analytics</div>
-                <div class="skill">Power BI</div>
+            <div class="skill">Java</div>
+            <div class="skill">C#</div>
+            <div class="skill">SQL</div>
+            <div class="skill">Git / GitHub</div>
 
             </div>
+            <h4 class="skill-level basic-label">Basic familiarity</h4>
+            <div class="skills">
+                <div class="skill">C++</div>
+                <div class="skill">Python</div>
+                <div class="skill">PHP</div>
+                <div class="skill">Laravel</div>
+            </div>
 
-        </section>
+            </section>
 
-        <section id="projects">
+            <section id="projects">
 
             <h3>Projects</h3>
 
-            <div class="cards">
-
-
-                <div class="card">
-
-                    <h2>🐾 Paws & Claws Animal Shelter System</h2>
-
-                    <br>
-
-                    <p>
-                    Desktop application developed in C# Windows Forms with SQL Server for managing
-                    animals, adopters, animal types, and shelter records.
-                    </p>
-
-                    <br>
-
-                    <strong>• C#  • SQL</strong>
-                    <a href="https://github.com/Paws-ClawsShelter/Paws_And_Claws"
-                    target="_blank"
-                    class="btn secondary github-btn">
-                    View on GitHub
-                    </a>
-
-
-                </div>
-
-
-                <div class="card">
-
-                    <h2>🏎 Apex Motorsport Database</h2>
-
-                    <br>
-
-                    <p>
-                    Formula One database project designed to manage drivers, teams, races and
-                    various data using SQL.
-                    </p>
-
-                    <br>
-
-                    <strong>• Oracle SQL Developer</strong>
-                    <a href="https://github.com/lSiphonl/ApexMotorsport"
-                    target="_blank"
-                    class="btn secondary github-btn">
-                    View on GitHub
-                    </a>
-
-
-                </div>
-
-
+            <div class="cards project-cards">
+                <article class="card project-card">
+                    <h4>PukSquash</h4>
+                </article>
+                <article class="card project-card">
+                    <h4><a class="project-link" href="https://github.com/stephvr/uber-bolt-operations-analysis" target="_blank" rel="noopener noreferrer">Uber and Bolt Operations Analysis</a></h4>
+                </article>
+                <article class="card project-card">
+                    <h4><a class="project-link" href="https://github.com/lSiphonl/ApexMotorsport" target="_blank" rel="noopener noreferrer">Apex Motorsport Database</a></h4>
+                </article>
             </div>
 
-        </section>
+    </section>
 
-        <section id="coursework">
+    <section id="contact">
 
-            <h3>Experience</h3>
+        <h3>Contact</h3>
 
-            <div class="coursework-grid"> 
+        <p>
+            <strong>Email:</strong>
+            <a href="mailto:stephanvr10@gmail.com">stephanvr10@gmail.com</a>
+        </p>
 
-                <div class="course-card distinction">
-                    <div class="course-icon">📋</div>
-                    <div>
-                        <h4>Student Assistant - Data Structures and Algorithms</h4>
-                        <p>Assist with the assessment and marking of Data Structures & Algorithms coursework.</p>
-                    </div>
-                </div>
+        <p>
+            <strong>GitHub:</strong>
+            <a href="https://github.com/stephvr" target="_blank" rel="noopener noreferrer">
+                github.com/stephvr
+            </a>
+        </p>
 
-                
+        <p>
+            <strong>LinkedIn:</strong>
+            <a href="https://www.linkedin.com/in/stephanvanrensburg/" target="_blank" rel="noopener noreferrer">
+                linkedin.com/in/stephanvanrensburg
+            </a>
+        </p>
 
-
-            </div>
-
-        </section>
-
-        <section id="contact">
-
-            <h3>Contact</h3>
-
-            <p>
-                <strong>Email:</strong>
-                <a href="mailto:stephanvr10@gmail.com">stephanvr10@gmail.com</a>
-            </p>
-
-            <p>
-                <strong>GitHub:</strong>
-                <a href="https://github.com/stephvr" target="_blank">
-                    github.com/stephvr
-                </a>
-            </p>
-
-            <p>
-                <strong>LinkedIn:</strong>
-                <a href="https://www.linkedin.com/in/stephanvanrensburg/" target="_blank">
-                    linkedin.com/in/stephanvanrensburg
-                </a>
-            </p>
-
-        </section>
-        <footer>
+    </section>
+    </main>
+<footer>
 
 
 
-        </footer>
-        <script src="animations.js"></script>
+</footer>
 
-    </body>
+    <script src="animations.js"></script>
+</body>
 </html>

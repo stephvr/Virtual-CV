@@ -1,5 +1,52 @@
-
+/* Extra visual effects for Stephan's Virtual CV */
 html { scroll-padding-top: 90px; }
+
+.skip-link {
+  position: fixed;
+  top: -70px;
+  left: 20px;
+  z-index: 1100;
+  padding: 12px 18px;
+  border-radius: 8px;
+  background: #F8FAFC;
+  color: #0F172A;
+}
+.skip-link:focus { top: 12px; }
+a:focus-visible, button:focus-visible {
+  outline: 3px solid #93C5FD;
+  outline-offset: 5px;
+}
+.hero h2 { min-height: 1.5em; }
+.hero .availability {
+  margin-top: 18px;
+  color: #BFDBFE;
+  font-size: .95rem;
+  font-weight: 600;
+}
+.profile-details {
+  display: grid;
+  gap: 20px;
+  max-width: 850px;
+  margin-top: 30px;
+}
+.profile-details > div {
+  display: grid;
+  grid-template-columns: 160px minmax(0, 1fr);
+  gap: 20px;
+  line-height: 1.7;
+}
+.profile-details dt { color: #F8FAFC; font-weight: 600; }
+.profile-details dd { color: #CBD5E1; margin: 0; }
+.skill-level { margin-bottom: 18px; color: #CBD5E1; font-size: 1rem; }
+.basic-label { margin-top: 32px; }
+.cards { grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); }
+.project-card { justify-content: center; min-height: 112px; }
+.project-card h4 { font-size: 1.15rem; line-height: 1.5; }
+.project-link { color: inherit; text-decoration: none; display: inline-flex; align-items: flex-start; }
+.project-link:hover { color: #93C5FD; }
+.project-link .link-icon { margin-top: .23em; }
+#contact p { margin-bottom: 18px; line-height: 1.7; }
+#contact a { overflow-wrap: anywhere; }
 
 body { overflow-x: hidden; }
 
@@ -168,12 +215,23 @@ nav a.active::after { transform: scaleX(1); }
 .back-to-top:hover { background: rgba(59,130,246,.13); }
 
 @media (max-width: 700px) {
+  nav { padding: 18px 5%; }
+  nav ul { gap: clamp(14px, 4vw, 28px); flex-wrap: wrap; }
+  nav a { font-size: .95rem; }
+  section { padding: 60px 6%; }
+  .hero { padding-top: 120px; }
+  .hero h2 { font-size: 1.2rem; min-height: 2.5em; margin-bottom: 5px; }
+  .btn { margin: 6px; padding: 13px 20px; }
+  .profile-details > div { grid-template-columns: 1fr; gap: 4px; }
+  .skill { padding: 10px 16px; }
+  #contact p strong { display: block; }
   .hero::before { left: -55px; }
   .hero::after { right: -35px; }
   .back-to-top { right: 14px; bottom: 14px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
   *, *::before, *::after {
     animation-duration: .01ms !important;
     animation-iteration-count: 1 !important;
@@ -181,69 +239,4 @@ nav a.active::after { transform: scaleX(1); }
   }
   .reveal { opacity: 1; transform: none; }
   .typing-cursor { display: none; }
-}
-
-
-
-.coursework-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.course-card {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    padding: 22px;
-    background: #1E293B;
-    border: 1px solid rgba(59, 130, 246, 0.2);
-    border-radius: 15px;
-    transition: transform 0.3s ease,
-                border-color 0.3s ease,
-                box-shadow 0.3s ease;
-}
-
-.course-card:hover {
-    transform: translateY(-6px);
-    border-color: #3B82F6;
-    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.22);
-}
-
-.course-card.distinction {
-    border-left: 4px solid #3B82F6;
-}
-
-.course-icon {
-    display: grid;
-    place-items: center;
-    flex-shrink: 0;
-    width: 48px;
-    height: 48px;
-    font-size: 1.4rem;
-    background: rgba(59, 130, 246, 0.12);
-    border-radius: 12px;
-}
-
-.course-card h4 {
-    margin: 0 0 6px;
-    font-size: 1rem;
-    color: #F8FAFC;
-}
-
-.course-card p {
-    margin: 0;
-    color: #94A3B8;
-    font-size: 0.9rem;
-}
-
-.course-card.distinction p {
-    color: #E2E8F0;
-}
-
-
-@media (max-width: 900px) {
-    .coursework-grid {
-        grid-template-columns: 1fr;
-    }
 }
